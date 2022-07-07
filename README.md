@@ -12,7 +12,7 @@
   - sql : CREATE TABLE users (
     userid SERIAL PRIMARY KEY,
     name TEXT,
-    age INT,
+    price INT,
     location TEXT
 );
   - copy url to .env
@@ -26,42 +26,42 @@
 - go run main.go
 
 ## Create a new user (POST)
-URL: http://localhost:8080/api/newuser
+URL: http://localhost:8080/api/rice
 Body: raw/json
 
 {
-    "name": "gopher",
-    "age":25,
-    "location":"India"
+    "name": "mapan 05",
+    "price": 15000,
+    "location":"indonesia"
 }
 
-<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093219.png?raw=true">
+<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093219.png?raw=true](https://github.com/suandedev/go-rice-api-postgres/blob/main/Screenshot%20(335).png?raw=true)">
 
 ## Get a user (GET)
-URL: http://localhost:8080/api/user/1
+URL: http://localhost:8080/api/user/4
 
 /api/user/{id}
 
-<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093424.png?raw=true">
+<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093424.png?raw=true](https://github.com/suandedev/go-rice-api-postgres/blob/main/Screenshot%20(333).png?raw=true)">
 
 ## Get all user (GET)
 URL: http://localhost:8080/api/user
 
-<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093511.png?raw=true">
+<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093511.png?raw=true](https://github.com/suandedev/go-rice-api-postgres/blob/main/Screenshot%20(332).png?raw=true)">
 
 ## Update a user (PUT)
-URL: http://localhost:8080/api/user/1
+URL: http://localhost:8080/api/user/4
 Body: raw/json
 
 {
-    "name": "golang gopher",
-    "age":24,
-    "location":"Hyderabad, India"
+    "name": "mapan 03",
+    "age": 160000,
+    "location":"indonesia"
 }
 
-<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093559.png?raw=true">
+<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093559.png?raw=true](https://github.com/suandedev/go-rice-api-postgres/blob/main/Screenshot%20(336).png?raw=true)">
 
 ## Delete a user (DELETE)
-URL: http://localhost:8080/api/deleteuser/1
+URL: http://localhost:8080/api/deleteuser/4
 
-<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093641.png?raw=true">
+<img width="45%" src="https://github.com/suandedev/go-api-postgres/blob/main/Screenshot%202022-07-03%20093641.png?raw=true](https://github.com/suandedev/go-rice-api-postgres/blob/main/Screenshot%20(337).png?raw=true)">
